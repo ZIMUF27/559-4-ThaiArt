@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="th">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Login — เข้าสู่ระบบ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Niramit:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="logo">ThaiArt</div>
+      <ul class="nav-menu">
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="signup.html">Signup</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container form-page">
+    <h1>เข้าสู่ระบบ</h1>
+    <form id="loginForm" class="form-card" onsubmit="return handleLogin(event)">
+      <label for="username">Username</label>
+      <input id="username" name="username" type="text" required>
+
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" required>
+
+      <button type="submit" class="btn">Login</button>
+      <p class="muted">ยังไม่มีบัญชี? <a href="signup.html">สมัครที่นี่</a></p>
+    </form>
+
+    <div class="divider"></div>
+    <p class="credit">made by 67162110559-4</p>
+  </main>
+
+
+  <script>
+    function handleLogin(e) { e.preventDefault(); alert('จำลองการล็อกอิน'); return false; }
+  </script>
+</body>
+
+</html>

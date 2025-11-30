@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="th">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Signup — ลงทะเบียน</title>
+  <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Niramit:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="logo">ThaiArt</div>
+      <ul class="nav-menu">
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container form-page">
+    <h1>สมัครสมาชิก</h1>
+    <form id="signupForm" class="form-card" onsubmit="return handleSignup(event)">
+      <label for="firstname">ชื่อ</label>
+      <input id="firstname" name="firstname" type="text" required>
+
+      <label for="lastname">นามสกุล</label>
+      <input id="lastname" name="lastname" type="text" required>
+
+      <label for="province">จังหวัด</label>
+      <input id="province" name="province" type="text" required>
+
+      <label for="nationality">สัญชาติ</label>
+      <input id="nationality" name="nationality" type="text" required>
+
+      <label for="email">อีเมล</label>
+      <input id="email" name="email" type="email" required>
+
+      <label for="password">รหัสผ่าน</label>
+      <input id="passwordSignup" name="passwordSignup" type="password" required>
+
+      <button type="submit" class="btn" style="margin-top:12px">สมัคร</button>
+    </form>
+
+    <div class="divider"></div>
+    <p class="credit">made by 67162110559-4</p>
+  </main>
+
+
+  <script>
+    function handleSignup(e) { e.preventDefault(); alert('จำลองการสมัคร'); return false; }
+  </script>
+</body>
+
+</html>
